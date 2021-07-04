@@ -114,7 +114,7 @@ int main() {
           //   state vector
 
           VectorXd estimate(4);
-
+          std::cout << fusionEKF.ekf_.x_ << std::endl;
           double p_x = fusionEKF.ekf_.x_(0);
           double p_y = fusionEKF.ekf_.x_(1);
           double v1  = fusionEKF.ekf_.x_(2);
